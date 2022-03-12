@@ -48,6 +48,7 @@ body{
 
 .nav>ul>a{
     text-decoration: none;
+    transition-duration: 0.2s;
 }
 
 .nav>ul>a>li {
@@ -66,6 +67,12 @@ body{
     color: white;
     background-color: #3742fa;
     font-weight: 400;
+    transition-duration: .2s;
+}
+
+.nav>ul>a:hover{
+    transform: scale(1.1, 1.1);
+    color: black;
     transition-duration: .2s;
 }
 
@@ -89,7 +96,7 @@ body{
 }
 
 .bg1>img{
-    width: 60rem;
+    width: 64.09vh;
 }
 
 .first-sec{
@@ -180,6 +187,7 @@ body{
 
 .data>input{
     box-shadow: -10px 9px 39px -17px rgba(0,0,0,0.75);
+    font-size: 700;
     border-radius: 5px;
     width: 15rem;
     background-color: #3742fa;
@@ -194,7 +202,7 @@ body{
     z-index: 1;
 }
 
-.logos>img{
+.logos>a>img{
     filter: grayscale(100%);
     opacity: 15%;
     width: 40rem;
@@ -202,7 +210,7 @@ body{
     transition-duration: 0.2s;
 }
 
-.logos>img:hover{
+.logos>a>img:hover{
     filter: grayscale(0%);
     opacity: 100%;
     transform: scale(1.1, 1.1);
@@ -288,7 +296,7 @@ body{
 }
 
 .bg2>img{
-    width: 66rem;
+    width: 70.5vh;
 }
 
 .container{
@@ -342,17 +350,43 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    height: 7rem;
+    transition-duration: 0.2s;
+}
+
+#id:checked + .fixed-cont{
     height: 15rem;
+    transition-duration: 0.2s;
 }
 
 .fixed-cont>p{
+    border: 1px solid rgba(0, 0, 0, 0.041);
     padding: 1rem 5rem;
     color: #505858af;
+    visibility: hidden;
 }
 
-.contEx{
+.fixed-cont>.contEx>label>i{
+    color: #3742fa;
+    box-shadow: 1px 1px 20px 5px rgba(36, 74, 117, 0.144);
+    border-radius: .5rem;
+    padding: .6rem;
+    background-color: #1e8fff31;
+    margin-right: 2rem;
+}
+
+#id{
+    visibility: hidden;
+}
+
+#id:checked + .fixed-cont>.hidden{
+    visibility: visible;
+    animation-duration: 2s;
+}
+
+.fixed-cont>.contEx{
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: -8rem;
     box-shadow: none;
 }
 
@@ -369,7 +403,7 @@ body{
 }
 
 .bg3>img{
-    width: 69rem;
+    width: 73.6vh;
 }
 
 .first-sec>h4{
@@ -434,6 +468,12 @@ body{
     width: 16rem;
     font-size: 1.7rem;
     font-weight: 700;
+    transition-duration: 0.2s;
+}
+
+.wrapper>p:hover{
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.2s;
 }
 
 footer{
